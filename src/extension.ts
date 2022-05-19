@@ -1,10 +1,7 @@
 'use strict';
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
-import * as vscode from 'vscode'; //Importamos todas las funcionalidades y referencias de 'vscode' y se le asigna el alias de vscode
 
-// this method is called when your extension is activated
-// your extension is activated the very first time the command is executed
+
+import * as vscode from 'vscode'; //Importamos todas las funcionalidades y referencias de 'vscode' y se le asigna el alias de vscode
 
 export function activate(context: vscode.ExtensionContext) { //Utilizamos la palabra export para indicar que la funcion activate se exportará del módulo
 	/**
@@ -65,5 +62,4 @@ export function activate(context: vscode.ExtensionContext) { //Utilizamos la pal
     context.subscriptions.push(disposable);
 }
 
-// this method is called when your extension is deactivated
 export function deactivate() {}
